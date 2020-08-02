@@ -23,9 +23,11 @@
 + BOM对象
 
 ##### 实战篇
-+ canvas介绍
-+ 基于vue-express-sql 搭建前端项目（PC+H5）
++ canvas制作小游戏
++ 基于vue-express-sql/mongoDB 搭建前端项目（PC+H5）
 + ...其他前端框架项目
++ 服务器基本操作和部署
++ 多端开发和小程序基本介绍
 
 ##### 进阶篇
 - HTTP原理和相关实践
