@@ -57,7 +57,7 @@ class Request{
     toString(){
         return `${this.method} ${this.path} HTTP/1.1\r\n`+
         `${Object.keys(this.headers).map(key=>`${key}: ${this.headers[key]}`).join('\r\n')}\r\n\r\n`+
-        `${this.bodyText}`
+        `${this.bodyText}\r\n`
     }
 }
 
@@ -196,13 +196,13 @@ void async function (){
     let request = new Request({
         method:'POST',
         host:'127.0.0.1',
-        port: 8088,
+        port: 3000,
         path:'/',
         headers:{
             ['x-Foo2']:'customed'
         },
         body:{
-            name:'小鱼酱yummy'
+            name:'xiaoyuyummy'
         }
     });
 
