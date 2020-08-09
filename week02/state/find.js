@@ -1,4 +1,4 @@
-function find(str,test='abcdef'){
+function find(str,test='cdacdbcdx'){
     let result = []
     let len = test.length
     let matchArr = []
@@ -11,7 +11,7 @@ function find(str,test='abcdef'){
                 result[index].push(index === 0?i+1:targe[i]+1)
             }
         }
-        if(!result[index].length)return -1;
+        if(!result[index].length)return [];
     }
     
     for(let i of result[len-1]){
@@ -19,4 +19,4 @@ function find(str,test='abcdef'){
     }
     return matchArr
 }
-console.log(find('ababcdef'));
+console.log(find('ababcdefcdacbcdxcdadbcdx'));
